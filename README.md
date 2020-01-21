@@ -21,4 +21,4 @@ ik this is bad sorry :(
 
 credit to: https://codepen.io/navin_sh/pen/rgknI for the form
 
-#EVERYTHING MAY GET SENT TO YOUR SPAM SORRY..
+# EVERYTHING MAY GET SENT TO YOUR SPAM SORRY..
