@@ -1,12 +1,15 @@
 # simple-contact-form
 
-1. grab all the api keys from sengrid 
+1. grab all the api keys from sendgrid https://sendgrid.com/docs/ui/account-and-settings/api-keys/#creating-an-api-key
 
 2. put them in .env file (example: SENDGRID_API_KEY=apikeyhere)
 
-3. run npm install 
+3. set everything correctly in the env file except SENDGRID_DOMAIN as it isnt used yet.
+(i commented it out dw)
 
-4. run npm start
+4. run npm install 
+
+5. run npm start
 
 
 congratulations! 
