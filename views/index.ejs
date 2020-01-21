@@ -1,0 +1,29 @@
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Mail App</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <div class="container">
+        <fieldset>
+            <form action="/" method="post">
+              <input name="contactName" type="Name" class="ghost-input" placeholder="Enter your name" required>
+              <input name="contactEmail" type="text" class="ghost-input" placeholder="Enter your email address" required> 
+              <textarea name="textEmail" rows="5" type="text" class="ghost-input" placeholder="Type your message here" required></textarea>
+              <input type="submit" class="ghost-button">
+            </form>
+          </fieldset>
+    
+      <p>Made with love by <a href="https://twitter.com/pupperpuppy">Gabe</a></p>
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
