@@ -1,8 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
+<<<<<<< HEAD
 require('dotenv').config()
 
+=======
+const sgMail = require('@sendgrid/mail');
+require('dotenv').config()
+>>>>>>> adf55fdffe183681d2452bea1689b93614daf5d9
 
 const app = express();
 
