@@ -12,7 +12,9 @@ module.exports = {
                     text: ` ${emailContent}\n\n\nIP Address sent from: ${ip} `,
                 };
                 sgMail.send(msg).catch(err => console.log(JSON.stringify(err)));               
-                console.log('sent\n', msg);
+                 
+                console.log(`\nsent email`);
+                // console.log('sent\n', msg);
                 resolve(true);
             } 
             catch (err) {
