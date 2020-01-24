@@ -15,13 +15,28 @@
         <fieldset>
             <form action="/" method="post">
               <input name="contactName" type="Name" class="ghost-input" placeholder="Enter your name" required>
-              <input name="contactEmail" type="text" class="ghost-input" placeholder="Enter your email address" required> 
+              <input name="contactEmail" type="email" class="ghost-input" placeholder="Enter your email address" required> 
               <textarea name="textEmail" rows="5" type="text" class="ghost-input" placeholder="Type your message here" required></textarea>
+              <input type="checkbox" name="checkbox">Are you sure you want to send this?<br>
               <input type="submit" class="ghost-button">
+              <script src="https://www.google.com/recaptcha/api.js?render=6Lc7odEUAAAAAM_Pk5wvaL5v9Q47mUhz3-QVt83h"></script>
+              <script>
+              grecaptcha.ready(function() {
+                  grecaptcha.execute('6Lc7odEUAAAAAM_Pk5wvaL5v9Q47mUhz3-QVt83h', {action: 'homepage'})
+                    .then(function(token) {
+                      let data = {token: token}
+                      fetch('/captcha', {
+                        headers: {'Content-Type': 'application/json', 'Content-Type': 'application/json'},
+                        method: 'POST',
+                        body: JSON.stringify(data),
+                      })
+                  });
+              });
+              </script>
             </form>
           </fieldset>
     
-      <p>Made with love by <a href="https://twitter.com/pupperpuppy">Gabe</a></p>
+      <p>made by: <a href="https://twitter.com/pupperpuppy">gabe</a></p>
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
